@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dev Arena - Learn. Code. Build.</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0.8rem 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #0077ff, #00c6ff);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #0077ff;
+    }
+
+    .courses {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-around;
+    }
+
+    .course-card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      width: 250px;
+    }
+
+    .course-card h4 {
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    footer {
+      background: #1e1e2f;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .courses {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header h1, .hero h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dev Arena</h1>
+    <p>Learn. Code. Build.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Welcome to Dev Arena</h2>
+    <p>Your hub for coding tutorials, AI projects, and more!</p>
+  </section>
+
+  <section class="section" id="about">
+    <h3>About Us</h3>
+    <p>Dev Arena is a platform to help developers and learners master coding, artificial intelligence, and real-world projects through clear tutorials and hands-on learning. Start building your future with us!</p>
+  </section>
+
+  <section class="section" id="courses">
+    <h3>Popular Courses</h3>
+    <div class="courses">
+      <div class="course-card">
+        <h4>Python for Beginners</h4>
+        <p>Start coding with Python from scratch. No prior experience needed.</p>
+      </div>
+      <div class="course-card">
+        <h4>Build AI Without APIs</h4>
+        <p>Learn how to make AI tools from zero without relying on APIs.</p>
+      </div>
+      <div class="course-card">
+        <h4>Web Development Crash Course</h4>
+        <p>HTML, CSS, JavaScript – everything to build your first website.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Contact Us</h3>
+    <p>Email: contact@devarena.com</p>
+    <p>Follow us on YouTube: <strong>Dev Arena</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dev Arena. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
